@@ -1,0 +1,152 @@
+/*** Main header section start ***/
+
+.main_header {
+  margin: 4.375rem 7.5rem;
+  display: flex;
+}
+
+.main_header_left {
+  width: 50%;
+  height: 100%;
+}
+
+.main_header_left p {
+  text-align: left;
+  margin-bottom: 1.9rem;
+}
+
+.main_header_text {
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #55645e;
+  width: 80%;
+}
+
+.main_header_left button {
+  margin-bottom: 3.75rem;
+}
+
+.main_header_box_wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.main_header_box {
+  width: 31%;
+  height: 90%;
+  background: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_header_box h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  margin-bottom: 12px;
+}
+
+.main_header_box span {
+  color: #10985d;
+  font-weight: 900;
+}
+.main_header_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main_header_right div {
+  width: 48%;
+}
+
+.main_header_right div img {
+  width: 100%;
+}
+
+.main_hero1 {
+  position: relative;
+}
+
+.main_hero1::after {
+  content: "";
+  position: absolute;
+  width: 2.7rem;
+  height: 2.7rem;
+  left: -4.8%;
+  top: 85%;
+  border-radius: 50%;
+  background: #3cb27f;
+}
+
+.main_hero2 {
+  position: relative;
+}
+
+.main_hero2::after {
+  content: "";
+  position: absolute;
+  width: 2.7rem;
+  height: 2.7rem;
+  left: 72%;
+  top: 1.8%;
+  border-radius: 50%;
+  background: #933cb2;
+}
+
+.main_hero4 {
+  position: relative;
+}
+
+.main_hero4::after {
+  content: "";
+  position: absolute;
+  width: 2.7rem;
+  height: 2.7rem;
+  left: -4.8%;
+  top: 85%;
+  border-radius: 50%;
+  background: #3c64b2;
+}
+
+/*** Main header section finish ***/
+
+/*** Main header responsive start ***/
+
+@media screen and (max-width: 950px) {
+  .main_header {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .main_header_left {
+    width: 100%;
+  }
+
+  .main_header_right {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
+}
+/*** Main header responsive finish ***/
